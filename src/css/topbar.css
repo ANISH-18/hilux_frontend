@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+}
+
+.socialicons {
+  color: #a2acbd;
+}
+.socialicons:hover {
+  color: white;
+}
+
+.contact-info {
+  max-width: 100%;
+}
+
+@media (max-width: 320px) {
+  .email {
+    font: 10%;
+  }
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media (max-width: 320px) {
+  .contact {
+    display: block;
+  }
+}

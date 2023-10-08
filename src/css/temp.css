@@ -1,0 +1,17 @@
+/* .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.main-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

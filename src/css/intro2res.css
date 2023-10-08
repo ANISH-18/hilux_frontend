@@ -1,0 +1,13 @@
+@media screen and (max-width: 770px) {
+  .points li {
+    font-size: 13px;
+  }
+}
+
+/* Override the image size to fit smaller screens */
+@media screen and (max-width: 770px) {
+  .img-intro .img-lab {
+    max-width: 100%;
+    height: 50%;
+  }
+}

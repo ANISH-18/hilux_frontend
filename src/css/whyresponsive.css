@@ -1,0 +1,33 @@
+/* intro-responsive.css */
+
+/* Adjust the font size of the list items for smaller screens */
+@media screen and (max-width: 200px) {
+  .points li {
+    font-size: 13px;
+  }
+}
+
+/* Override the image size to fit smaller screens */
+@media screen and (max-width: 200px) {
+  .img-intro .img-lab {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.wrapper-why {
+  height: 100vh;
+}
+
+.margin-aboutus{
+  margin-bottom: 55px;
+}
+
+.text-classd{
+  text-align: left;
+}
+
+.points {
+  list-style-type: disc; /* You can change "disc" to "circle" or "square" for different bullet styles */
+  margin-left: 20px; /* Adjust the margin as needed */
+}

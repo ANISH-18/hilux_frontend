@@ -1,0 +1,14 @@
+.points {
+  text-align: justify;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .text-we {
+    font-size: 30px;
+  }
+}
+
+.wrapper-intro2 {
+  height: 100vh;
+}

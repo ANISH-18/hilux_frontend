@@ -1,0 +1,80 @@
+.off-canvas {
+  transition: transform 0.2s ease-in-out;
+}
+
+.off-canvas.open {
+  transition: tanslateX(1);
+}
+
+.off-canvas-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  /* background-color: #0b83d7; */
+  background-color: #154374;
+}
+
+.link-to {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  color: #000;
+  /* color: white; */
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.brand {
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  font-weight: 500;
+  display: inline-block;
+  color: white;
+  padding-bottom: 2px; /* Adjust the padding value to control the space */
+  text-decoration: none; /* Disable the default underline */
+  border-bottom: 2px solid transparent; /* Set the initial border color to transparent */
+}
+
+.nav-link:hover {
+  border-bottom-color: black;
+
+  /* Adjust the color as needed */
+  border-width: 2px;
+}
+
+.logo {
+  color: white;
+}
+
+.navbar {
+  color: white;
+}
+
+@media (min-width: 200px) and (max-width: 990px) {
+  .navbar {
+    color: black;
+  }
+}

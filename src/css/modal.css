@@ -1,0 +1,23 @@
+.mod-header {
+  background-color: #0b83d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS to hide the number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* CSS to style input elements when they are focused (selected) */
+/* CSS to style Form.Control elements when they are focused (selected) */
+.form-control:focus {
+  /* Add your custom styles here */
+  border-color: rgb(0, 123, 255); /* Change border color when focused */
+  box-shadow: 0 2 5px rgba(0, 123, 255, 0.5); /* Add a shadow when focused */
+  /* Add any other styles you want */
+}

@@ -1,0 +1,54 @@
+.card-acc {
+  position: relative;
+  box-shadow: 0 0 5px black;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.accreditations-heading h1 {
+  color: #235b9d;
+}
+/* .card-acc:hover {
+   transform: scale(1.1); 
+} */
+
+.text-container-acc {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+.text-container-acc h5 {
+  color: black;
+  padding: 10px;
+}
+
+.img-man-acc {
+  border-radius: 30px;
+  width: 100%;
+  height: 170px; /* Adjust the height as needed */
+  object-fit: contain;
+  padding: 20px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.img-man-acc:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.man-cont-acc {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-row-acc {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}

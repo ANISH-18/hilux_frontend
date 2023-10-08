@@ -1,0 +1,41 @@
+.card-man {
+  position: relative;
+  box-shadow: 0 0 5px black;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-man:hover {
+  transform: scale(1.1);
+}
+
+.text-container {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+.text-container h5 {
+  color: black;
+  padding: 10px;
+}
+
+.img-man {
+  border-radius: 30px;
+  width: 100%;
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.man-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.manufacture-of h1{
+  color: #235B9D;
+}
