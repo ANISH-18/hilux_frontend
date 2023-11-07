@@ -9,6 +9,7 @@ import vision from "../assets/images/vision.jpg";
 import mission from "../assets/images/mission.jpg";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos";
+import WhatsAppButton from "./WhatsAppButton";
 
 export default function Aboutus() {
   useEffect(() => {
@@ -139,6 +140,7 @@ export default function Aboutus() {
           </Row>
         </div>
       </Container>
+      <WhatsAppButton />
     </>
   );
 }

@@ -82,7 +82,7 @@ const Contactform = () => {
   };
 
   const submitSuccuss = () => {
-    toast.success("Data Recorded Succussfully", {
+    toast.success("Data Submitted Succussfully", {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,

@@ -10,19 +10,21 @@ import Manufacture from "./Manufacture";
 import Accreditations from "./Accreditations";
 import Intro3 from "./Intro3";
 import WhatsAppButton from "./WhatsAppButton";
+import Layout from "./Layout"; // Import the Layout component
 
 export default function Home() {
   return (
     <>
-      <Intro />
-      {/* <Intro2 /> */}
-      <Why />
-      <Manufacture />
+      <Layout>
+        <Intro />
+        <Why />
+        <Manufacture />
 
-      <Intro3 />
+        <Intro3 />
 
-      <Accreditations />
-      <WhatsAppButton />
+        <Accreditations />
+        <WhatsAppButton />
+      </Layout>
     </>
   );
 }

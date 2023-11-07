@@ -7,13 +7,27 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Category_Seventeen() {
+  const [search, setSearch] = useState("");
   return (
     <>
       <Container className="mt-2">
-        <h1>Cosmetic</h1>
+        <div>
+          <h1>Cosmetic</h1>
+          <Form>
+            <Form.Group
+              className="mb-3 input-resize"
+              controlId="exampleForm.ControlInput1"
+            >
+              <Form.Control
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search Product Name"
+              />
+            </Form.Group>
+          </Form>
+        </div>
       </Container>
       <Container className="mt-3">
-        <TB />
+        <TB search={search} setSearch={setSearch} />
       </Container>
     </>
   );
@@ -57,7 +71,7 @@ export default function Category_Seventeen() {
 //   );
 // };
 
-const TB = () => {
+const TB = ({ search, setSearch }) => {
   const [data, setData] = useState([]);
   let [selectedProductName, setSelectedProductName] = useState("");
 
@@ -93,26 +107,32 @@ const TB = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((eachData, i) => {
-            return (
-              <tr key={i}>
-                <td>{i + 1}</td>
-                <td className="text-capitalize">{eachData.name}</td>
-                <td className="text-capitalize">{eachData.description}</td>
-                <td className="text-capitalize">{eachData.form}</td>
-                <td>
-                  <Button
-                    className="ms-3"
-                    onClick={() => {
-                      handleOrderClick(eachData.name);
-                    }}
-                  >
-                    Order
-                  </Button>
-                </td>
-              </tr>
-            );
-          })}
+          {data
+            .filter((eachData) => {
+              return search === ""
+                ? eachData
+                : eachData.name.toLocaleLowerCase().includes(search);
+            })
+            .map((eachData, i) => {
+              return (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td className="text-capitalize">{eachData.name}</td>
+                  <td className="text-capitalize">{eachData.description}</td>
+                  <td className="text-capitalize">{eachData.form}</td>
+                  <td>
+                    <Button
+                      className="ms-3"
+                      onClick={() => {
+                        handleOrderClick(eachData.name);
+                      }}
+                    >
+                      Order
+                    </Button>
+                  </td>
+                </tr>
+              );
+            })}
         </tbody>
       </Table>
       <Popup

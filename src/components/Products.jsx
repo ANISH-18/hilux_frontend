@@ -31,6 +31,7 @@ import "../css/products.css";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos";
+import WhatsAppButton from "./WhatsAppButton";
 
 export default function Products() {
   const products = [
@@ -181,6 +182,7 @@ export default function Products() {
           ))}
         </Row>
       </Container>
+      <WhatsAppButton />
     </>
   );
 }

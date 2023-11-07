@@ -1,11 +1,11 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import "../css/WhatsAppButton";
+import "../css/WhatsappButton.css";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     // Add your WhatsApp link here
-    // Example: window.open('https://wa.me/1234567890', '_blank');
+    window.open("https://wa.me/message/H3NEN2CKG4WJF1", "_blank");
   };
   return (
     <div className="whatsapp-button" onClick={handleWhatsAppClick}>
